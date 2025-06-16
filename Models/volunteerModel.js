@@ -2,12 +2,11 @@
 const mongoose = require("mongoose");
 
 const volunteerSchema = new mongoose.Schema({
-  fullName: String,
+  Fullname: String,
   email: String,
   phone: String,
-  availability: String,
-  skills: String,
-  motivation: String,
+  interests: String,
+
 });
 
 module.exports = mongoose.model("Volunteer", volunteerSchema);
